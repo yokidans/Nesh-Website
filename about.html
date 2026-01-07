@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Learn about NESH Group's mission, vision, and commitment to delivering premium Ethiopian food products through sustainable practices.">
+    <title>About | NESH Group</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content="About | NESH Group">
+    <meta property="og:description" content="Discover our mission to revolutionize Ethiopia's food ecosystem through premium products and sustainable practices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neshgroup.com/about">
+    <meta property="og:image" content="https://neshgroup.com/images/logo.png">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/products.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-spinner">
+                    <img src="images/logo.png" alt="NESH Group Logo" class="loading-logo-img">
+                </div>
+            </div>
+            <div class="loading-text" data-en="NESH GROUP" data-am="ኔሽ ግሩፕ">NESH GROUP</div>
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Skip to main content -->
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo" aria-label="NESH Group Home">
+                <div class="logo-img-container">
+                    <img src="images/logo.png" alt="NESH Group Logo" class="logo-img">
+                </div>
+                <div class="logo-text-container">
+                    <span class="logo-main">NESH</span>
+                    <span class="logo-sub">GROUP</span>
+                </div>
+            </a>
+            
+            <!-- Language Switcher -->
+            <div class="header-top-right">
+                <div class="language-switcher-container">
+                    <div class="language-switcher">
+                        <button class="language-btn active" data-lang="en" id="langEn" aria-label="Switch to English">
+                            <span class="lang-code">EN</span>
+                            <span class="lang-name" data-en="English" data-am="እንግሊዝኛ">English</span>
+                        </button>
+                        <div class="language-divider"></div>
+                        <button class="language-btn" data-lang="am" id="langAm" aria-label="Switch to Amharic">
+                            <span class="lang-code">አማ</span>
+                            <span class="lang-name" data-en="Amharic" data-am="አማርኛ">Amharic</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Navigation -->
+            <div class="nav-main-container">
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <nav class="main-nav" aria-label="Primary Navigation">
+                    <ul class="nav-menu" id="navMenu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link" data-en="Home" data-am="መነሻ">
+                                <i class="fas fa-home nav-icon"></i>
+                                <span class="nav-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link active" data-en="About" data-am="ስለ እኛ">
+                                <i class="fas fa-info-circle nav-icon"></i>
+                                <span class="nav-text">About</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="products.html" class="nav-link" data-en="Products" data-am="ምርቶች">
+                                <i class="fas fa-shopping-bag nav-icon"></i>
+                                <span class="nav-text">Products</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#businesses" class="nav-link" data-en="Businesses" data-am="ንግዶች">
+                                <i class="fas fa-building nav-icon"></i>
+                                <span class="nav-text">Businesses</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#dashboard" class="nav-link" data-en="Dashboard" data-am="ዳሽቦርድ">
+                                <i class="fas fa-chart-line nav-icon"></i>
+                                <span class="nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#contact" class="nav-link" data-en="Contact" data-am="አግኙን">
+                                <i class="fas fa-envelope nav-icon"></i>
+                                <span class="nav-text">Contact</span>
+                            </a>
+                        </li>
+                        <li class="nav-item cart-item">
+                            <a href="#" class="nav-link cart-link" data-en="Cart" data-am="ጋሪ">
+                                <i class="fas fa-shopping-cart nav-icon"></i>
+                                <span class="nav-text">Cart</span>
+                                <span class="cart-badge" id="cartCount">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" class="about-page">
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title" data-en="About NESH Group" data-am="ስለ NESH ግሩፕ">About NESH Group</h1>
+                <p class="page-subtitle" data-en="Transforming Ethiopia's agricultural heritage into global premium food excellence" data-am="የኢትዮጵያን ግብርና ቅርስ ወደ ዓለም አቀፍ ላይኛ ደረጃ የምግብ ልሂቃንነት መለወጥ">Transforming Ethiopia's agricultural heritage into global premium food excellence</p>
+            </div>
+        </section>
+        
+        <!-- Mission & Vision -->
+        <section class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 data-en="Our Mission" data-am="ተልዕኮአችን">Our Mission</h3>
+                        <p data-en="To create Ethiopia's first vertically-integrated premium food ecosystem that delivers operational excellence from Ethiopian highlands to global tables through sustainable, traceable, and innovative practices." data-am="ኢትዮጵያን ከከፍተኛ ሜዳዎች እስከ ዓለም አቀፍ ጠረጴዛዎች የሚያደርስ የስራ አፈጻጸም ልሂቃንነት ያለው የመጀመሪያ ላይኛ ደረጃ የተዋሃደ የምግብ ስርዓት መፍጠር።">To create Ethiopia's first vertically-integrated premium food ecosystem that delivers operational excellence from Ethiopian highlands to global tables through sustainable, traceable, and innovative practices.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 data-en="Our Vision" data-am="ራዕይአችን">Our Vision</h3>
+                        <p data-en="To become Africa's premier food group, recognized globally for transforming Ethiopian agricultural heritage into premium products that set new standards in quality, sustainability, and taste." data-am="ከአፍሪካ ዋና የምግብ ቡድን መሆን፣ የኢትዮጵያን ግብርና ቅርስ ወደ ላይኛ ደረጃ ምርቶች በመቀየር በጥራት፣ ቀጣይነት እና ጣዕም ላይ አዳዲስ ደረጃዎች በማዘጋጀት በዓለም የሚታወቅ።">To become Africa's premier food group, recognized globally for transforming Ethiopian agricultural heritage into premium products that set new standards in quality, sustainability, and taste.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 data-en="Our Values" data-am="�ላዎቻችን">Our Values</h3>
+                        <p data-en="Excellence in every detail, sustainability in every process, heritage in every product, and integrity in every partnership. We believe in creating value that extends beyond profits to communities and ecosystems." data-am="በእያንዳንዱ ዝርዝር ላይ ልሂቃንነት፣ በእያንዳንዱ ሂደት ቀጣይነት፣ በእያንዳንዱ ምርት ቅርስ፣ እና በእያንዳንዱ አጋርነት ታማኝነት።">Excellence in every detail, sustainability in every process, heritage in every product, and integrity in every partnership.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Story Section -->
+        <section class="story-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-en="Our Story" data-am="ታሪካችን">Our Story</h2>
+                    <p class="section-subtitle" data-en="From vision to reality: Building Ethiopia's premium food legacy" data-am="ከራዕይ እስከ ተጨባጭነት፡ የኢትዮጵያን ላይኛ ደረጃ የምግብ ቅርስ መገንባት">From vision to reality: Building Ethiopia's premium food legacy</p>
+                </div>
+                
+                <div class="story-content">
+                    <div class="story-text">
+                        <p data-en="Founded in 2023, NESH Group emerged from a simple yet powerful observation: Ethiopia possesses some of the world's most unique agricultural treasures, yet lacks a premium integrated food system to deliver these treasures to global markets with the excellence they deserve." data-am="በ2023 የተመሠረተው NESH ግሩፕ ከቀላል ነገር ግን ኃይለኛ ምልከታ የመጣ፡ ኢትዮጵያ በዓለም ልዩ የሆኑ የግብርና ትምህርቶች አሉት፣ ነገር ግን እነዚህን ትምህርቶች ወደ ዓለም አቀፍ ገበያዎች ከሚገባው ልሂቃንነት ጋር ለማድረስ ላይኛ ደረጃ የተዋሃደ የምግብ ስርዓት አይኖረውም።">Founded in 2023, NESH Group emerged from a simple yet powerful observation: Ethiopia possesses some of the world's most unique agricultural treasures, yet lacks a premium integrated food system to deliver these treasures to global markets with the excellence they deserve.</p>
+                        
+                        <p data-en="Our name, NESH, embodies our commitment: Nourishment, Excellence, Sustainability, Heritage. These four pillars guide every decision we make, from farm partnerships to product development to customer experience." data-am="የእኛ ስም፣ NESH፣ ቃል ኪዳናችንን ይገልጻል፡ ማበረታቻ፣ ልሂቃንነት፣ ቀጣይነት፣ ቅርስ። እነዚህ አራት ዋና አምዶች ከግብርና አጋርነት እስከ ምርት አዘጋጅብን እና እስከ ደንበኛ ተሞክሮ ድረስ የምንወስዳቸውን ሁሉንም ውሳኔዎች ይመራሉ።">Our name, NESH, embodies our commitment: Nourishment, Excellence, Sustainability, Heritage.</p>
+                        
+                        <p data-en="Today, we operate three vertically-integrated enterprises: Nesh Artisan Bakery, Nesh Premium Dairy, and Nesh Teff Heritage. Each represents our dedication to transforming Ethiopia's agricultural potential into world-class premium products." data-am="ዛሬ፣ ሶስት ላይኛ ደረጃ የተዋሃዱ ድርጅቶችን እንሰራለን፡ Nesh Artisan Bakery፣ Nesh Premium Dairy፣ እና Nesh Teff Heritage። እያንዳንዳቸው የኢትዮጵያን የግብርና እምቅ አቅም ወደ ዓለም አቀፍ ላይኛ ደረጃ ምርቶች በመቀየር ላይ ያለን ቁርጠኝነት ይወክላሉ።">Today, we operate three vertically-integrated enterprises: Nesh Artisan Bakery, Nesh Premium Dairy, and Nesh Teff Heritage.</p>
+                    </div>
+                    
+                    <div class="story-image">
+                        <img src="images/ethiopian-highlands.jpg" alt="Ethiopian Highlands" data-en="Ethiopian Highlands - Our Source of Inspiration" data-am="የኢትዮጵያ ከፍተኛ ሜዳዎች - የኛ መነሳሳት ምንጭ">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Leadership Section -->
+        <section class="leadership-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-en="Our Leadership" data-am="የመሪነታችን ቡድን">Our Leadership</h2>
+                    <p class="section-subtitle" data-en="A team of visionaries dedicated to transforming Ethiopia's food industry" data-am="የኢትዮጵያን የምግብ ኢንዱስትሪ ለመቀየር የተለዩ የራዕይ ባለቤቶች ቡድን">A team of visionaries dedicated to transforming Ethiopia's food industry</p>
+                </div>
+                
+                <div class="leadership-grid">
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="images/ceo.jpg" alt="CEO - Habtamu Kassa" data-en="Habtamu Kassa - Founder & CEO" data-am="ሀብታሙ ካሳ - መስራች እና ሊቀመንበር">
+                        </div>
+                        <div class="leader-info">
+                            <h3 data-en="Habtamu Kassa" data-am="ሀብታሙ ካሳ">Habtamu Kassa</h3>
+                            <p class="leader-title" data-en="Founder & CEO" data-am="መስራች እና ሊቀመንበር">Founder & CEO</p>
+                            <p class="leader-bio" data-en="Former Nesh partner with 15+ years in Finance sector and Leadership transformation across country." data-am="የቀድሞ ማክንዚ አጋር በአፍሪካ እና በአውሮፓ ላይ በግብርና ንግድ እና የምግብ ስርዓት ለውጥ 15+ ዓመታት ልምድ ያለው።">Former McKinsey partner with 15+ years in agribusiness and food systems transformation across Africa and Europe.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="images/cto.jpg" alt="COO - Nahom Mesfin" data-en="Nahom Mesfin - Chief Operation Officer" data-am="ናሆም መስፍን - ዋና ኦፕሬሽን አስተዳዳሪ">
+                        </div>
+                        <div class="leader-info">
+                            <h3 data-en="Nahom Mesfin" data-am="ናሆም መስፍን">Nahom Mesfin</h3>
+                            <p class="leader-title" data-en="Chief Operation Officer" data-am="ዋና ኦፕሬሽን አስተዳዳሪ">Chief Operation Officer</p>
+                            <p class="leader-bio" data-en="Market management, specializing in grain processing and preservation technologies." data-am="በመያዣ ቴክኖሎጂዎች ልዩ ባለሙያ።">PhD in Food Science from Cornell University, specializing in grain processing and preservation technologies.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="images/cfo.jpg" alt="CFO - " data-en=" - Chief Financial Officer" data-am=" - ዋና ፋይናንስ አስተዳዳሪ">
+                        </div>
+                        <div class="leader-info">
+                            <h3 data-en=" " data-am=" ">XXXX</h3>
+                            <p class="leader-title" data-en="Chief Financial Officer" data-am="ዋና ፋይናንስ አስተዳዳሪ">Chief Financial Officer</p>
+                            <p class="leader-bio" data-en="Former VP of Finance at Diageo Africa, with extensive experience in FMCG finance and investment management." data-am="የቀድሞ የዳያጆ አፍሪካ የፋይናንስ ዋና ምክትል ፕሬዝዳንት፣ በፋስት-ሞቭንግ ሸቀጦች ፋይናንስ እና ኢንቨስትመንት አስተዳደር ሰፊ ልምድ ያለው።">Former VP of Finance at Diageo Africa, with extensive experience in FMCG finance and investment management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sustainability Section -->
+        <section class="sustainability-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-en="Our Sustainability Commitment" data-am="የቀጣይነታችን ቃል ኪዳን">Our Sustainability Commitment</h2>
+                    <p class="section-subtitle" data-en="Building a food ecosystem that nourishes people and planet" data-am="ሕዝብን እና ፕላኔትን የሚያበረታታ የምግብ ስርዓት መገንባት">Building a food ecosystem that nourishes people and planet</p>
+                </div>
+                
+                <div class="sustainability-grid">
+                    <div class="sustainability-card">
+                        <div class="sustainability-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 data-en="Regenerative Agriculture" data-am="የማደግ ግብርና">Regenerative Agriculture</h3>
+                        <p data-en="Partnering with 500+ smallholder farmers using sustainable farming practices that improve soil health and biodiversity." data-am="ከ500+ ትናንሽ አርሶ አደሮች ጋር በመሆን የአፈር ጤና እና ባዮዲቨርሲቲ የሚያሻሽል ቀጣይነት ያለው የግብርና ልምድ መጠቀም።">Partnering with 500+ smallholder farmers using sustainable farming practices that improve soil health and biodiversity.</p>
+                    </div>
+                    
+                    <div class="sustainability-card">
+                        <div class="sustainability-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3 data-en="Water Stewardship" data-am="የውሃ አስተዳደር">Water Stewardship</h3>
+                        <p data-en="Implementing water recycling systems that reduce consumption by 40% across all our production facilities." data-am="በሁሉም የምርት ተቋማችን ላይ ፍጆታን በ40% የሚቀንስ የውሃ ማደስ ስርዓቶችን መተግበር።">Implementing water recycling systems that reduce consumption by 40% across all our production facilities.</p>
+                    </div>
+                    
+                    <div class="sustainability-card">
+                        <div class="sustainability-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <h3 data-en="Circular Economy" data-am="የክብ ኢኮኖሚ">Circular Economy</h3>
+                        <p data-en="Transforming by-products into valuable resources - bakery waste becomes animal feed, dairy by-products become biogas." data-am="የተጎዱ ምርቶችን ወደ ጠቃሚ ሀብቶች መቀየር - የቦቂ ቆሻሻ የእንስሳት ምግብ ይሆናል፣ የወተት የተጎዱ ምርቶች ባዮጋዝ ይሆናሉ።">Transforming by-products into valuable resources - bakery waste becomes animal feed, dairy by-products become biogas.</p>
+                    </div>
+                    
+                    <div class="sustainability-card">
+                        <div class="sustainability-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 data-en="Community Impact" data-am="የማህበረሰብ ተጽእኖ">Community Impact</h3>
+                        <p data-en="Creating 127+ premium jobs with fair wages and comprehensive benefits, prioritizing local hiring and skills development." data-am="127+ ላይኛ ደረጃ ስራዎችን በፍትሃዊ ደመወዝ እና በሙሉ ጥቅም መፍጠር፣ የአካባቢ መቅጠር እና የችሎታ እድገትን በቅድሚያ ማድረግ።">Creating 127+ premium jobs with fair wages and comprehensive benefits, prioritizing local hiring and skills development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <div class="footer-logo">
+                        <span class="logo-text">NESH</span>
+                        <span class="logo-sub">GROUP</span>
+                    </div>
+                    <p class="footer-description" 
+                       data-en="A vertically-integrated premium food ecosystem delivering excellence from Ethiopian highlands to global tables."
+                       data-am="ላይኛ ደረጃ የተዋሃደ የምግብ ስርዓት የኢትዮጵያን ከፍተኛ ሜዳዎች ከዓለም ወደ ጠረጴዛዎች የሚያደርስ ልሂቃንነት።">
+                        A vertically-integrated premium food ecosystem delivering excellence from Ethiopian highlands to global tables.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title" data-en="Quick Links" data-am="ፈጣን አገናኞች">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-en="Home" data-am="መነሻ">Home</a></li>
+                        <li><a href="about.html" data-en="About" data-am="ስለ እኛ">About</a></li>
+                        <li><a href="products.html" data-en="Products" data-am="ምርቶች">Products</a></li>
+                        <li><a href="index.html#businesses" data-en="Businesses" data-am="ንግዶች">Businesses</a></li>
+                        <li><a href="index.html#contact" data-en="Contact" data-am="አግኙን">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title" data-en="Enterprise Units" data-am="የንግድ ክፍሎች">Enterprise Units</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html#bakery" data-en="Artisan Bakery" data-am="አርቲዛን ቦቂ">Artisan Bakery</a></li>
+                        <li><a href="products.html#dairy" data-en="Premium Dairy" data-am="ላይኛ ደረጃ ወተት">Premium Dairy</a></li>
+                        <li><a href="products.html#teff" data-en="Teff Heritage" data-am="ጤፍ ቅርስ">Teff Heritage</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title" data-en="Legal" data-am="ህጋዊ">Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-en="Privacy Policy" data-am="የግላዊነት ፖሊሲ">Privacy Policy</a></li>
+                        <li><a href="#" data-en="Terms of Service" data-am="የአገልግሎት ውሎች">Terms of Service</a></li>
+                        <li><a href="#" data-en="Cookie Policy" data-am="ኩኪ ፖሊሲ">Cookie Policy</a></li>
+                        <li><a href="#" data-en="Investor Relations" data-am="የኢንቨስተር ግንኙነቶች">Investor Relations</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p data-en="&copy; 2024 NESH Group Holdings. All rights reserved. | Enterprise Target: ETB 440M+ Year 1"
+                       data-am="&copy; 2024 ኔሽ ግሩፕ ሆልዲንግስ. ሁሉም መብቶች የተጠበቁ ናቸው. | የንግድ ዒላማ: ETB 440M+ ዓመት 1">
+                        &copy; 2024 NESH Group Holdings. All rights reserved. | Enterprise Target: ETB 440M+ Year 1
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize about page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set initial language
+            const savedLang = localStorage.getItem('nesh_language') || 'en';
+            if (typeof setLanguage === 'function') {
+                setLanguage(savedLang);
+            }
+            
+            // Initialize mobile menu
+            initMobileMenu();
+            
+            // Hide loading screen
+            setTimeout(() => {
+                const loadingScreen = document.getElementById('loadingScreen');
+                if (loadingScreen) {
+                    loadingScreen.style.opacity = '0';
+                    setTimeout(() => {
+                        loadingScreen.style.display = 'none';
+                    }, 500);
+                }
+            }, 1000);
+        });
+        
+        function initMobileMenu() {
+            const toggle = document.getElementById('mobileMenuToggle');
+            const menu = document.getElementById('navMenu');
+            
+            if (toggle && menu) {
+                toggle.addEventListener('click', function() {
+                    menu.classList.toggle('active');
+                    this.classList.toggle('active');
+                    this.setAttribute('aria-expanded', menu.classList.contains('active'));
+                    
+                    // Toggle body scroll
+                    document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+                        menu.classList.remove('active');
+                        toggle.classList.remove('active');
+                        toggle.setAttribute('aria-expanded', 'false');
+                        document.body.style.overflow = '';
+                    }
+                });
+                
+                // Close menu on escape key
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && menu.classList.contains('active')) {
+                        menu.classList.remove('active');
+                        toggle.classList.remove('active');
+                        toggle.setAttribute('aria-expanded', 'false');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>

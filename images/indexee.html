@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="NESH Group: Ethiopia's Premier Integrated Food Ecosystem delivering operational excellence from Ethiopian highlands to global tables through sustainable practices.">
+    <title>NESH | Ethiopia's Ultimate Premium Food Ecosystem</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content="NESH | Ethiopia's Ultimate Premium Food Ecosystem">
+    <meta property="og:description" content="Three vertically-integrated premium enterprises delivering operational excellence from Ethiopian highlands to global tables.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neshgroup.com">
+    <meta property="og:image" content="https://neshgroup.com/images/logo.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NESH Group",
+      "alternateName": "ኔሽ ግሩፕ",
+      "url": "https://neshgroup.com",
+      "logo": "https://neshgroup.com/images/logo.png",
+      "description": "Ethiopia's Premier Integrated Food Ecosystem",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Addis Ababa",
+        "addressCountry": "Ethiopia"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+251-11-888-9999",
+        "contactType": "Customer Service",
+        "availableLanguage": ["English", "Amharic"]
+      }
+    }
+    </script>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+</head>
+<body>
+    <!-- Loading Screen - UPDATED: Using logo.png instead of "N" -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <!-- Circular Logo Container -->
+                <div class="logo-spinner">
+                    <img src="images/logo.png" alt="NESH Group Logo" class="loading-logo-img">
+                </div>
+            </div>
+            <div class="loading-text" data-en="NESH GROUP" data-am="ኔሽ ግሩፕ">NESH GROUP</div>
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Skip to main content -->
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+    
+    <!-- Header with Perfect Alignment -->
+    <header class="main-header">
+        <div class="container header-container">
+            <!-- Logo Left Side - UPDATED: Full circular logo -->
+            <a href="index.html" class="logo" aria-label="NESH Group Home">
+                <div class="logo-img-container">
+                    <img src="images/logo.png" alt="NESH Group Logo" class="logo-img">
+                </div>
+                <div class="logo-text-container">
+                    <span class="logo-main">NESH</span>
+                    <span class="logo-sub">GROUP</span>
+                </div>
+            </a>
+            
+            <!-- Language Switcher - TOP RIGHT CORNER (Standard Position) -->
+            <div class="header-top-right">
+                <div class="language-switcher-container">
+                    <div class="language-switcher">
+                        <button class="language-btn active" data-lang="en" id="langEn" aria-label="Switch to English">
+                            <span class="lang-code">EN</span>
+                            <span class="lang-name" data-en="English" data-am="እንግሊዝኛ">English</span>
+                        </button>
+                        <div class="language-divider"></div>
+                        <button class="language-btn" data-lang="am" id="langAm" aria-label="Switch to Amharic">
+                            <span class="lang-code">አማ</span>
+                            <span class="lang-name" data-en="Amharic" data-am="አማርኛ">Amharic</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Navigation -->
+            <div class="nav-main-container">
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <nav class="main-nav" aria-label="Primary Navigation">
+                    <ul class="nav-menu" id="navMenu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active" data-en="Home" data-am="መነሻ">
+                                <i class="fas fa-home nav-icon"></i>
+                                <span class="nav-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link" data-en="About" data-am="ስለ እኛ">
+                                <i class="fas fa-info-circle nav-icon"></i>
+                                <span class="nav-text">About</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="products.html" class="nav-link" data-en="Products" data-am="ምርቶች">
+                                <i class="fas fa-shopping-bag nav-icon"></i>
+                                <span class="nav-text">Products</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#businesses" class="nav-link" data-en="Businesses" data-am="ንግዶች">
+                                <i class="fas fa-building nav-icon"></i>
+                                <span class="nav-text">Businesses</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#dashboard" class="nav-link" data-en="Dashboard" data-am="ዳሽቦርድ">
+                                <i class="fas fa-chart-line nav-icon"></i>
+                                <span class="nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link" data-en="Contact" data-am="አግኙን">
+                                <i class="fas fa-envelope nav-icon"></i>
+                                <span class="nav-text">Contact</span>
+                            </a>
+                        </li>
+                        <li class="nav-item cart-item">
+                            <a href="#" class="nav-link cart-link" data-en="Cart" data-am="ጋሪ">
+                                <i class="fas fa-shopping-cart nav-icon"></i>
+                                <span class="nav-text">Cart</span>
+                                <span class="cart-badge" id="cartCount">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section with Perfect Layout -->
+        <section class="hero-section">
+            <div class="hero-background"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title" id="heroTitle" 
+                            data-en="ETHIOPIA'S ULTIMATE INTEGRATED FOOD ECOSYSTEM"
+                            data-am="የኢትዮጵያ ዋና የምግብ ስርዓት መስተጋብር">
+                            ETHIOPIA'S ULTIMATE INTEGRATED FOOD ECOSYSTEM
+                        </h1>
+                        <p class="hero-subtitle" id="heroSubtitle"
+                           data-en="Three vertically-integrated premium enterprises delivering operational excellence from Ethiopian highlands to global tables through sustainable practices."
+                           data-am="ሶስት ላይኛ ደረጃ ድርጅቶች የኢትዮጵያን ከፍተኛ ሜዳዎች ከዓለም ወደ ጠረጴዛዎች የሚያደርሱ የስራ አፈጻጸም ልሂቃንነት።">
+                            Three vertically-integrated premium enterprises delivering operational excellence from Ethiopian highlands to global tables through sustainable practices.
+                        </p>
+                    </div>
+                    
+                    <!-- Hero Stats Grid -->
+                    <div class="hero-stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-value" id="statRevenue">ETB 440M+</div>
+                            <div class="stat-label" data-en="Projected Year 1 Revenue" data-am="የመጀመሪያ ዓመት ገቢ ትንበያ">Projected Year 1 Revenue</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="statPositions">127+</div>
+                            <div class="stat-label" data-en="Premium Positions Created" data-am="የተፈጠሩ ላይኛ ደረጃ ሥራዎች">Premium Positions Created</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="statMarkets">15+</div>
+                            <div class="stat-label" data-en="International Markets" data-am="ዓለም አቀፍ ገበያዎች">International Markets</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="statTraceability">100%</div>
+                            <div class="stat-label" data-en="Traceability Guaranteed" data-am="እንዲከተሉ የሚችሉት ዋስትና">Traceability Guaranteed</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hero CTA Buttons -->
+                    <div class="hero-cta">
+                        <a href="#businesses" class="btn btn-primary btn-hero" data-en="Explore Ecosystem" data-am="ስርዓቱን ይመልከቱ">
+                            <span class="btn-text">Explore Ecosystem</span>
+                            <i class="fas fa-arrow-right btn-icon"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary btn-hero" data-en="Investor Deck" data-am="የኢንቨስተር ማስረጃ">
+                            <span class="btn-text">Investor Deck</span>
+                            <i class="fas fa-download btn-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Showcase -->
+        <section class="section businesses-section" id="businesses">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-en="Vertically Integrated Enterprises" data-am="ላይኛ ደረጃ የተዋሃዱ ድርጅቶች">
+                        Vertically Integrated Enterprises
+                    </h2>
+                    <p class="section-subtitle" 
+                       data-en="Three distinct premium businesses unified by operational excellence and Ethiopian heritage"
+                       data-am="ሶስት የተለያዩ ላይኛ ደረጃ ንግዶች በስራ አፈጻጸም ልሂቃንነት እና የኢትዮጵያ ቅርስ ተዋህደው">
+                        Three distinct premium businesses unified by operational excellence and Ethiopian heritage
+                    </p>
+                </div>
+                
+                <div class="business-cards-grid">
+                    <!-- Bakery Business -->
+                    <div class="business-card" data-category="bakery">
+                        <div class="card-header bakery-header">
+                            <div class="card-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h3 class="card-title" data-en="Nesh Artisan Bakery" data-am="ኔሽ አርቲዛን ቦቂ">Nesh Artisan Bakery</h3>
+                            <p class="card-subtitle" data-en="Mastercrafted breads & premium patisserie" data-am="ሙሉ ጠቃሚ ዳቦዎች እና ላይኛ ደረጃ ዳቦ ምርቶች">Mastercrafted breads & premium patisserie</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="business-stats">
+                                <div class="business-stat">
+                                    <div class="stat-number">ETB 8.75M</div>
+                                    <div class="stat-desc" data-en="Strategic Investment" data-am="ስትራቴጂ ኢንቨስትመንት">Strategic Investment</div>
+                                </div>
+                                <div class="business-stat">
+                                    <div class="stat-number">15,000+</div>
+                                    <div class="stat-desc" data-en="Daily Premium Units" data-am="ዕለታዊ ላይኛ ደረጃ ክፍሎች">Daily Premium Units</div>
+                                </div>
+                                <div class="business-stat">
+                                    <div class="stat-number">35+</div>
+                                    <div class="stat-desc" data-en="Master Artisans" data-am="አርቲዛን ሙያተኞች">Master Artisans</div>
+                                </div>
+                            </div>
+                            <div class="business-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt detail-icon"></i>
+                                    <div class="detail-content">
+                                        <strong data-en="Flagship Location:" data-am="ዋና ቦታ:">Flagship Location:</strong>
+                                        <span data-en="Bole, Addis Ababa | Gelan Production Hub" data-am="ቦሌ፣ አዲስ አበባ | ገላን የምርት ማዕከል">Bole, Addis Ababa | Gelan Production Hub</span>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-bullseye detail-icon"></i>
+                                    <div class="detail-content">
+                                        <strong data-en="Target Market:" data-am="የግብይት ገበያ:">Target Market:</strong>
+                                        <span data-en="Premium consumers, 5-star hotels, corporate elite" data-am="ላይኛ ደረጃ ፍጆች፣ 5 ኮከብ ሆቴሎች፣ ኮርፖሬት ኤሊት">Premium consumers, 5-star hotels, corporate elite</span>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-star detail-icon"></i>
+                                    <div class="detail-content">
+                                        <strong data-en="Signature Products:" data-am="ምልክት ምርቶች:">Signature Products:</strong>
+                                        <span data-en="Teff sourdough, heritage grain pastries" data-am="ጤፍ ሳውርዶ፣ የቅርስ እህል ዳቦዎች">Teff sourdough, heritage grain pastries</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="products.html#bakery" class="btn btn-outline">
+                                <span data-en="View Collection" data-am="ስብስብ ይመልከቱ">View Collection</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Dairy Business -->
+                    <div class="business-card" data-category="dairy">
+                        <div class="card-header dairy-header">
+                            <div class="card-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <h3 class="card-title" data-en="Nesh Premium Dairy" data-am="ኔሽ ላይኛ ደረጃ ወተት">Nesh Premium Dairy</h3>
+                            <p class="card-subtitle" data-en="High-altitude luxury dairy products" data-am="ከፍተኛ ከፍታ ላይ የሚመረቱ የወተት ምርቶች">High-altitude luxury dairy products</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="business-stats">
+                                <div class="business-stat">
+                                    <div class="stat-number">ETB 180M</div>
+                                    <div class="stat-desc" data-en="Capital Investment" data-am="የካፒታል ኢንቨስትመንት">Capital Investment</div>
+                                </div>
+                                <div class="business-stat">
+                                    <div class="stat-number">300</div>
+                                    <div class="stat-desc" data-en="Holstein-Friesian Elite" data-am="ሆልስታይን-ፍሪዝያን ኤሊት">Holstein-Friesian Elite</div>
+                                </div>
+                                <div class="business-stat">
+                                    <div class="stat-number">10,000L</div>
+                                    <div class="stat-desc" data-en="Daily Premium Capacity" data-am="ዕለታዊ ላይኛ ደረጃ አቅም">Daily Premium Capacity</div>
+                                </div>
+                            </div>
+                            <div class="business-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-mountain detail-icon"></i>
+                                    <div class="detail-content">
+                                        <strong data-en="Highland Estate:" data-am="ከፍተኛ ሜዳ ንብረት:">Highland Estate:</strong>
+                                        <span data-en="Oromia Region (2,800m altitude)" data-am="ኦሮሚያ ክልል (2,800ሜ ከፍታ)">Oromia Region (2,800m altitude)</span>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-bullseye detail-icon"></i>
+                                    <div class="detail-content">
+                                        <strong data-en="Target Market:" data-am="የግብይት ገበያ:">Target Market:</strong>
+                                        <span data-en="Luxury urban market, premium hospitality" data-am="ላይኛ ደረጃ የከተማ ገበያ፣ ላይኛ ደረጃ ሆስፒታሊቲ">Luxury urban market, premium hospitality</span>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-star detail-icon"></i>
+                                    <div class="detail-content">
+                                        <strong data-en="Signature Products:" data-am="ምልክት ምርቶች:">Signature Products:</strong>
+                                        <span data-en="Vitamin-D fortified milk, artisanal cheese" data-am="ቫይታሚን-ዲ የተጨመረ ወተት፣ አርቲዛን ፎርማጆ">Vitamin-D fortified milk, artisanal cheese</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="products.html#dairy" class="btn btn-outline">
+                                <span data-en="View Collection" data-am="ስብስብ ይመልከቱ">View Collection</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Teff Business -->
+                    <div class="business-card" data-category="teff">
+                        <div class="card-header teff-header">
+                            <div class="card-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3 class="card-title" data-en="Nesh Teff Heritage" data-am="ኔሽ ጤፍ ቅርስ">Nesh Teff Heritage</h3>
+                            <p class="card-subtitle" data-en="Revolutionizing Ethiopia's ancient super grain" data-am="የኢትዮጵያን ጥንታዊ ሱፐር እህል እየቀየረ ነው">Revolutionizing Ethiopia's ancient super grain</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="business-stats">
+                                <div class="business-stat">
+                                    <div class="stat-number">ETB 25M</div>
+                                    <div class="stat-desc" data-en="Technology Investment" data-am="ቴክኖሎጂ ኢንቨስትመንት">Technology Investment</div>
+                                </div>
+                                <div class="business-stat">
+                                    <div class="stat-number">33,334</div>
+                                    <div class="stat-desc" data-en="Daily Artisan Injeras" data-am="ዕለታዊ አርቲዛን እንጀራዎች">Daily Artisan Injeras</div>
+                                </div>
+                                <div class="business-stat">
+                                    <div class="stat-number">85%+</div>
+                                    <div class="stat-desc" data-en="Export Margin Excellence" data-am="የምርት ማውጣት ማርጅን ልሂቃንነት">Export Margin Excellence</div>
+                                </div>
+                            </div>
+                            <div class="business-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-industry detail-icon"></i>
+                                    <div class="detail-content">
+                                        <strong data-en="Innovation Hub:" data-am="የአዲስ ማምረቻ ማዕከል:">Innovation Hub:</strong>
+                                        <span data-en="Bole Lemi Industrial Park" data-am="ቦሌ ለሚ ኢንዱስትሪያል ፓርክ">Bole Lemi Industrial Park</span>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-bullseye detail-icon"></i>
+                                    <div class="detail-content">
+                                        <strong data-en="Target Market:" data-am="የግብይት ገበያ:">Target Market:</strong>
+                                        <span data-en="Urban households, global diaspora" data-am="የከተማ ቤተሰቦች፣ ዓለም አቀፍ ዲያስፖራ">Urban households, global diaspora</span>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-star detail-icon"></i>
+                                    <div class="detail-content">
+                                        <strong data-en="Signature Products:" data-am="ምልክት ምርቶች:">Signature Products:</strong>
+                                        <span data-en="TerraTeff Flour, frozen TerraInjera" data-am="ቴራጤፍ ዱቄት፣ በረዶ የተቀዘፈ ቴራእንጀራ">TerraTeff Flour, frozen TerraInjera</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="products.html#teff" class="btn btn-outline">
+                                <span data-en="View Collection" data-am="ስብስብ ይመልከቱ">View Collection</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section class="section dashboard-section" id="dashboard">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-en="Live Operational Dashboard" data-am="ቀጥታ የስራ ዳሽቦርድ">
+                        Live Operational Dashboard
+                    </h2>
+                    <p class="section-subtitle" 
+                       data-en="Real-time enterprise performance metrics from our integrated ecosystem"
+                       data-am="ከላይኛ ደረጃ የተዋሃደ ስርዓታችን የሚመጡ የንግድ አፈጻጸም መለኪያዎች በእውን ጊዜ">
+                        Real-time enterprise performance metrics from our integrated ecosystem
+                    </p>
+                </div>
+                
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <div class="dashboard-value" id="dashboardBakery">0</div>
+                        <div class="dashboard-label" data-en="Premium Units Baked Today" data-am="ዛሬ የተጋገሩ ላይኛ ደረጃ ክፍሎች">Premium Units Baked Today</div>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="bakeryProgress"></div>
+                            </div>
+                            <div class="progress-info">
+                                <span data-en="Capacity" data-am="አቅም">Capacity</span>
+                                <span id="bakeryPercent">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <div class="dashboard-value" id="dashboardDairy">0</div>
+                        <div class="dashboard-label" data-en="Liters Premium Milk Processed" data-am="የተከለሉ ላይኛ ደረጃ ወተት ሊተሮች">Liters Premium Milk Processed</div>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="dairyProgress"></div>
+                            </div>
+                            <div class="progress-info">
+                                <span data-en="Capacity" data-am="አቅም">Capacity</span>
+                                <span id="dairyPercent">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <div class="dashboard-value" id="dashboardTeff">0</div>
+                        <div class="dashboard-label" data-en="Artisan Injeras Created" data-am="የተፈጠሩ አርቲዛን እንጀራዎች">Artisan Injeras Created</div>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="teffProgress"></div>
+                            </div>
+                            <div class="progress-info">
+                                <span data-en="Capacity" data-am="አቅም">Capacity</span>
+                                <span id="teffPercent">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <div class="dashboard-value" id="dashboardExport">0</div>
+                        <div class="dashboard-label" data-en="International Orders Today" data-am="ዛሬ የመጡ ዓለም አቀፍ ትዕዛዞች">International Orders Today</div>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="exportProgress"></div>
+                            </div>
+                            <div class="progress-info">
+                                <span data-en="Target" data-am="ዒላማ">Target</span>
+                                <span id="exportPercent">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-en="Contact Our Executive Team" data-am="ከአስፈፃሚ ቡድናችን ጋር ይገናኙ">
+                        Contact Our Executive Team
+                    </h2>
+                    <p class="section-subtitle" 
+                       data-en="Get in touch with our leadership for partnerships, investments, or inquiries"
+                       data-am="ለአጋርነት፣ ኢንቨስትመንት ወይም ጥያቄዎች ከመሪነታችን ጋር ይገናኙ">
+                        Get in touch with our leadership for partnerships, investments, or inquiries
+                    </p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <div class="contact-content">
+                                <h3 data-en="Corporate Headquarters" data-am="የኮርፖሬት መሥሪያ ቤት">Corporate Headquarters</h3>
+                                <p data-en="Addis Ababa, Ethiopia" data-am="አዲስ አበባ፣ ኢትዮጵያ">Addis Ababa, Ethiopia</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <div class="contact-content">
+                                <h3 data-en="Phone Number" data-am="ስልክ ቁጥር">Phone Number</h3>
+                                <p>+251 11 888 9999</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <div class="contact-content">
+                                <h3 data-en="Email Address" data-am="ኢሜይል አድራሻ">Email Address</h3>
+                                <p>executive@neshgroup.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <div class="contact-content">
+                                <h3 data-en="Business Hours" data-am="የስራ ሰዓት">
